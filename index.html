@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sreeganesh Shelmohker — CS undergraduate learning AI/ML engineering and building projects." />
+  <title>Sreeganesh Shelmohker — Developer Portfolio</title>
+
+  <!--
+    Inter from Google Fonts.
+    The CSS falls back to the system font stack if the network is unavailable.
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ── Skip link (keyboard / screen-reader accessibility) ── -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ══════════════════════════════════════════════════════════
+       HEADER / NAV
+       Landmark: <header role="banner">
+       ══════════════════════════════════════════════════════════ -->
+  <header class="site-header" role="banner">
+    <nav class="nav" aria-label="Primary navigation">
+
+      <!-- Logo / home link -->
+      <a class="nav-logo" href="#hero" aria-label="Sreeganesh Shelmohker — back to top">
+        Sreeganesh<span class="nav-logo-dot" aria-hidden="true">.</span>
+      </a>
+
+      <!--
+        Hamburger button — visible only on mobile (≤640 px).
+        aria-expanded is updated by main.js when the menu opens/closes.
+      -->
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-controls="nav-menu"
+        aria-expanded="false"
+        aria-label="Open navigation menu"
+      >
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+      <!-- Nav links -->
+      <ul class="nav-menu" id="nav-menu" role="list">
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#skills">Skills</a></li>
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <!-- ══════════════════════════════════════════════════════════
+       MAIN CONTENT
+       Landmark: <main>
+       ══════════════════════════════════════════════════════════ -->
+  <main id="main-content">
+
+    <!-- ── HERO ─────────────────────────────────────────────── -->
+    <section id="hero" class="section section--hero" aria-labelledby="hero-heading">
+      <div class="hero-inner">
+
+        <!-- Text content — comes first in DOM so screen readers read name before photo -->
+        <div class="hero-content">
+          <span class="hero-eyebrow">Computer Science Undergraduate</span>
+          <h1 id="hero-heading" class="hero-name">Sreeganesh Shelmohker</h1>
+          <p class="hero-tagline">
+            CS undergraduate · learning AI/ML engineering · building projects.
+          </p>
+          <div class="hero-cta" role="group" aria-label="Quick navigation">
+            <a class="btn btn--primary" href="#projects">View Projects</a>
+            <a
+              class="btn btn--ghost"
+              href="https://github.com/Sreeganesh-Shelmohker"
+              target="_blank"
+              rel="noopener noreferrer"
+            >GitHub ↗</a>
+          </div>
+        </div>
+
+        <!-- Profile photo -->
+        <!-- TODO: Place your photo at assets/profile.jpg — the frame below will fill in automatically -->
+        <div class="hero-photo-wrap">
+          <img
+            class="hero-photo"
+            src="assets/profile.jpg"
+            alt="Sreeganesh Shelmohker — profile photo"
+            width="180"
+            height="180"
+          />
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── ABOUT ─────────────────────────────────────────────── -->
+    <section id="about" class="section" aria-labelledby="about-heading">
+      <h2 id="about-heading" class="section-heading">About</h2>
+      <div class="about-body">
+        <p>
+          I'm a Computer Science undergraduate at Vishwa Vishwani Institute of Systems
+          and Management, India (2024–2028). My interests are in AI/ML engineering and
+          Agentic AI. I'm actively learning and building projects to develop practical
+          engineering skills.I love participating in hackathons and attending events 
+          for networking and learning.
+        </p>
+      </div>
+    </section>
+
+    <!-- ── SKILLS ─────────────────────────────────────────────── -->
+    <section id="skills" class="section" aria-labelledby="skills-heading">
+      <h2 id="skills-heading" class="section-heading">Skills</h2>
+      <div class="skills-body">
+
+        <!-- Languages -->
+        <div class="skill-group">
+          <h3 class="skill-group-name">Languages</h3>
+          <ul class="skill-list" role="list">
+            <li class="skill-pill">Python</li>
+            <li class="skill-pill">R</li>
+            <li class="skill-pill">SQL</li>
+            <li class="skill-pill">HTML</li>
+            <li class="skill-pill">CSS</li>
+          </ul>
+        </div>
+
+        <!-- Libraries -->
+        <div class="skill-group">
+          <h3 class="skill-group-name">Libraries</h3>
+          <ul class="skill-list" role="list">
+            <li class="skill-pill">NumPy</li>
+            <li class="skill-pill">Pandas</li>
+          </ul>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-group">
+          <h3 class="skill-group-name">Tools</h3>
+          <ul class="skill-list" role="list">
+            <li class="skill-pill">Git</li>
+            <li class="skill-pill">GitHub</li>
+            <li class="skill-pill">VS Code</li>
+            <li class="skill-pill">Linux</li>
+            <li class="skill-pill">Oracle Database</li>
+          </ul>
+        </div>
+
+        <!-- Used in Projects -->
+        <div class="skill-group">
+          <h3 class="skill-group-name">Used in Projects</h3>
+          <ul class="skill-list" role="list">
+            <li class="skill-pill">FastAPI</li>
+            <li class="skill-pill">SQLite</li>
+            <li class="skill-pill">Next.js</li>
+            <li class="skill-pill">React</li>
+          </ul>
+        </div>
+
+        <!-- Currently Learning -->
+        <div class="skill-group">
+          <h3 class="skill-group-name">Currently Learning</h3>
+          <ul class="skill-list" role="list">
+            <li class="skill-pill">Agentic AI</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── PROJECTS ───────────────────────────────────────────── -->
+    <section id="projects" class="section" aria-labelledby="projects-heading">
+      <h2 id="projects-heading" class="section-heading">Projects</h2>
+
+      <div class="projects-list">
+
+        <!-- ─── Sentinel Trace ──────────────────────────────── -->
+        <article class="project-card" aria-labelledby="proj-sentinel-title">
+          <header class="project-card-header">
+            <h3 id="proj-sentinel-title" class="project-title">Sentinel Trace</h3>
+            <p class="project-summary">
+              A learning project on AI agent guardrails and continuous evaluation, built for the YC Fall 2026 × Moss Zero Latency Builder Sprint.
+            </p>
+          </header>
+
+          <div class="project-body">
+            <div class="project-section">
+              <h4 class="project-section-label">What it explores</h4>
+              <p>
+                Explores prompt-injection detection and groundedness evaluation for AI agents.
+              </p>
+            </div>
+
+            <div class="project-section">
+              <h4 class="project-section-label">What I built</h4>
+              <ul class="project-built-list" role="list">
+                <li>Prompt check that compares incoming prompts against known injection and jailbreak patterns using Moss vector search, and returns allow or block</li>
+                <li>Groundedness check that scores whether a model's answer is supported by the context it was given</li>
+                <li>SQLite audit log that records each check with its verdict, score and latency</li>
+                <li>FastAPI backend with endpoints for checking, evaluating, viewing the log and stats</li>
+                <li>Next.js dashboard for testing prompts and watching the live trace feed</li>
+              </ul>
+            </div>
+
+            <div class="project-section">
+              <h4 class="project-section-label">Tools</h4>
+              <ul class="skill-list" role="list">
+                <li class="skill-pill">Python</li>
+                <li class="skill-pill">FastAPI</li>
+                <li class="skill-pill">SQLite</li>
+                <li class="skill-pill">Moss</li>
+                <li class="skill-pill">Next.js</li>
+              </ul>
+            </div>
+
+            <div class="project-section">
+              <h4 class="project-section-label">What I'd improve next</h4>
+              <p>
+                Measure the guardrail on a labelled set of safe and attack prompts to find false blocks and misses, and add automated backend tests.
+              </p>
+            </div>
+          </div>
+
+          <footer class="project-card-footer">
+            <a
+              class="project-link"
+              href="https://github.com/Sreeganesh-Shelmohker/Sentinel_Trace"
+              target="_blank"
+              rel="noopener noreferrer"
+            >GitHub ↗</a>
+            <a
+              class="project-link"
+              href="https://sentinel-trace-inky.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Live Demo ↗</a>
+            <span class="demo-note">(Backend runs on a free tier, so the first request may take up to a minute.)</span>
+          </footer>
+        </article>
+
+        <!-- ─── Afford-Sense ────────────────────────────────── -->
+        <article class="project-card" aria-labelledby="proj-afford-title">
+          <header class="project-card-header">
+            <h3 id="proj-afford-title" class="project-title">Afford-Sense</h3>
+            <p class="project-summary">
+              A Python agent that evaluates whether a purchase is affordable, forecasts cash flow and suggests a payment plan. Built for the HackerRank Orchestrate 24-hour hackathon (September 2026) with AI coding assistance.
+              <span class="project-note">Learning project — not financial advice.</span>
+            </p>
+          </header>
+
+          <div class="project-body">
+            <div class="project-section">
+              <h4 class="project-section-label">What it explores</h4>
+              <p>
+                Explores how an AI agent can help with everyday money decisions — evaluating
+                purchase affordability, forecasting cash flow, and suggesting payment
+                strategies based on inputs like income, expenses, and item price.
+              </p>
+            </div>
+
+            <div class="project-section">
+              <h4 class="project-section-label">What I built</h4>
+              <ul class="project-built-list" role="list">
+                <li>Reads purchase requests, financial profiles, transactions, exchange rates and payment options from CSV files using pandas</li>
+                <li>Forecasts future balances while protecting the user's minimum balance and essential expenses</li>
+                <li>Classifies each purchase as affordable now, affordable with a plan, affordable later, or not affordable</li>
+                <li>Recommends a payment method (full, partial, installments, wait or not recommended) with a payment schedule</li>
+                <li>Writes the decisions, payment plans and short explanations to a structured output.csv</li>
+              </ul>
+            </div>
+
+            <div class="project-section">
+              <h4 class="project-section-label">Tools</h4>
+              <ul class="skill-list" role="list">
+                <li class="skill-pill">Python</li>
+                <li class="skill-pill">pandas</li>
+              </ul>
+            </div>
+
+            <div class="project-section">
+              <h4 class="project-section-label">What I'd improve next</h4>
+              <p>
+                Replace the hand-entered amounts taken from receipt images with automatic extraction, and add a requirements file and tests for the safety rules, such as the balance never dropping below the minimum.
+              </p>
+            </div>
+          </div>
+
+          <footer class="project-card-footer">
+            <a
+              class="project-link"
+              href="https://github.com/Sreeganesh-Shelmohker/Afford-Sense"
+              target="_blank"
+              rel="noopener noreferrer"
+            >GitHub ↗</a>
+          </footer>
+        </article>
+
+        <!-- ─── Focus Forge ─────────────────────────────────── -->
+        <article class="project-card" aria-labelledby="proj-focus-title">
+          <header class="project-card-header">
+            <h3 id="proj-focus-title" class="project-title">Focus Forge</h3>
+            <p class="project-summary">
+              A productivity web app for planning tasks and tracking focused study sessions.
+            </p>
+          </header>
+
+          <div class="project-body">
+            <div class="project-section">
+              <h4 class="project-section-label">What it explores</h4>
+              <p>
+                Building an interactive, multi-feature web app with React and client-side
+                state, with no backend.
+              </p>
+            </div>
+
+            <div class="project-section">
+              <h4 class="project-section-label">What I built</h4>
+              <ul class="project-built-list" role="list">
+                <li>Task manager: add, edit, complete and delete tasks, with High/Medium/Low priority tags</li>
+                <li>25/5 Pomodoro timer</li>
+                <li>Focus mode that hides the sidebar for a distraction-free view</li>
+                <li>Light/dark theme toggle that remembers the user's choice</li>
+                <li>Tasks and preferences saved in the browser's localStorage</li>
+              </ul>
+            </div>
+
+            <div class="project-section">
+              <h4 class="project-section-label">Tools</h4>
+              <ul class="skill-list" role="list">
+                <li class="skill-pill">Next.js</li>
+                <li class="skill-pill">React</li>
+                <li class="skill-pill">CSS Modules</li>
+                <li class="skill-pill">Framer Motion</li>
+                <li class="skill-pill">Lucide React</li>
+              </ul>
+            </div>
+
+            <div class="project-section">
+              <h4 class="project-section-label">What I'd improve next</h4>
+              <p>
+                Change the focus-mode shortcut, because Ctrl+F clashes with the browser's find, and deploy it for a live demo.
+              </p>
+            </div>
+          </div>
+
+          <footer class="project-card-footer">
+            <a
+              class="project-link"
+              href="https://github.com/Sreeganesh-Shelmohker/focus-forge"
+              target="_blank"
+              rel="noopener noreferrer"
+            >GitHub ↗</a>
+            <!-- TODO: Add live demo URL once deployed -->
+          </footer>
+        </article>
+
+      </div><!-- /.projects-list -->
+
+      <!-- Other work — compact entry, not a full card -->
+      <div class="other-work">
+        <h3 class="other-work-heading">Other work</h3>
+        <div class="other-work-item">
+          <div class="other-work-header">
+            <h4 class="other-work-title">python-oops-chat-system</h4>
+            <span class="skill-pill">Python</span>
+          </div>
+          <p class="other-work-desc">
+            A small chat system built in Python to practice object-oriented programming concepts.
+          </p>
+          <a
+            class="project-link"
+            href="https://github.com/Sreeganesh-Shelmohker/python-oops-chat-system"
+            target="_blank"
+            rel="noopener noreferrer"
+          >GitHub ↗</a>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ── CONTACT ────────────────────────────────────────────── -->
+    <section id="contact" class="section" aria-labelledby="contact-heading">
+      <h2 id="contact-heading" class="section-heading">Contact</h2>
+      <p class="contact-intro">
+        Open to internships, learning opportunities and hackathon collaborations. The best way to reach me is by email or LinkedIn.
+      </p>
+      <ul class="contact-list" role="list">
+        <li class="contact-item">
+          <span class="contact-label">Email</span>
+          <a class="contact-link" href="mailto:sreeganeshshelmohker@gmail.com">
+            sreeganeshshelmohker@gmail.com
+          </a>
+        </li>
+        <li class="contact-item">
+          <span class="contact-label">LinkedIn</span>
+          <a
+            class="contact-link"
+            href="https://www.linkedin.com/in/sreeganesh-shelmohker"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            linkedin.com/in/sreeganesh-shelmohker ↗
+          </a>
+        </li>
+        <li class="contact-item">
+          <span class="contact-label">GitHub</span>
+          <a
+            class="contact-link"
+            href="https://github.com/Sreeganesh-Shelmohker"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            github.com/Sreeganesh-Shelmohker ↗
+          </a>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════════════════════════════
+       FOOTER
+       Landmark: <footer role="contentinfo">
+       ══════════════════════════════════════════════════════════ -->
+  <footer class="site-footer" role="contentinfo">
+    <p>
+      &copy; <span id="footer-year"></span> Sreeganesh Shelmohker &middot;
+      <a
+        class="footer-link"
+        href="https://github.com/Sreeganesh-Shelmohker"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GitHub
+      </a>
+    </p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
