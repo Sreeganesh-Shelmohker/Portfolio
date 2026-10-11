@@ -531,8 +531,10 @@ section[id] {
   }
 
   .hero-cta {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-2);
   }
 }
 
@@ -880,8 +882,10 @@ section[id] {
 .btn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 0.35em;
   padding: 0.6em 1.4em;
+  min-height: 44px;
   font-family: var(--font-sans);
   font-size: var(--text-sm);
   font-weight: 600;
@@ -889,6 +893,7 @@ section[id] {
   border-radius: var(--radius-md);
   text-decoration: none;
   white-space: nowrap;
+  max-width: 100%;
   transition:
     background-color var(--transition-fast),
     color            var(--transition-fast),
